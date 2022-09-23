@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-cinza-claro">
+    <div
+      class="h-[436px] w-full bg-cinza-azulado absolute top-0 left-0 -z-10"
+    ></div>
+
+    <div class="page w-[750px] m-auto">
+      <header class="mt-36 max-w-[417px] text-cinza-claro">
+        <h1 class="font-staatliches text-5xl">MENTORIA</h1>
+        <p class="mt-4 font-poppins text-xl">
+          Preencha o formulário abaixo para agendar a sua mentoria
+        </p>
+      </header>
+
+      <main class="bg-white rounded-t-[20px] p-16 mt-14">
+        <form id="form" action="" class="">
+          <fieldset id="personal-info" class="flex flex-col gap-4">
+            <legend
+              class="font-staatliches text-2xl text-cinza-azulado border-b border-[#E6E6F0] pb-4 mb-9 w-full"
+            >
+              INFORMAÇÕES PESSOAIS
+            </legend>
+
+            <div class="flex gap-5">
+              <div class="flex flex-col gap-2 w-full">
+                <label for="name" class="font-poppins text-cinza-azulado"
+                  >Nome</label
+                >
+                <input
+                  type="text"
+                  name="surname"
+                  id="surname"
+                  class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+                />
+              </div>
+              <div class="flex flex-col gap-2 w-full">
+                <label for="lastname" class="font-poppins text-cinza-azulado"
+                  >Sobrenome</label
+                >
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 w-full">
+              <label for="email" class="font-poppins text-cinza-azulado"
+                >Email
+                <span class="ml-3 text-[#C1BCCC] text-xs"
+                  >(digite um email válido)</span
+                >
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+              />
+            </div>
+
+            <div class="flex flex-col gap-2 w-full">
+              <label for="password" class="font-poppins text-cinza-azulado"
+                >Senha
+                <span class="ml-3 text-[#C1BCCC] text-xs"
+                  >(mínimo de 6 caracteres)</span
+                >
+              </label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset id="methor-info" class="flex flex-col gap-4 mt-8">
+            <legend
+              class="font-staatliches text-2xl text-cinza-azulado border-b border-[#E6E6F0] pb-4 mb-9"
+            >
+              INFORMAÇÕES DO MENTOR
+            </legend>
+
+            <div class="flex flex-col gap-2 w-full">
+              <label for="menthorship" class="font-poppins text-cinza-azulado"
+                >Nome do seu mentor
+                <span class="ml-3 text-[#C1BCCC] text-xs"
+                  >(só o primeiro nome)</span
+                >
+              </label>
+              <input
+                type="text"
+                name="menthorship"
+                id="menthorship"
+                class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset id="date-info" class="flex flex-col gap-4 mt-8">
+            <legend
+              class="font-staatliches text-2xl text-cinza-azulado border-b border-[#E6E6F0] pb-4"
+            >
+              SEUS HORÁRIOS DISPONÍVEIS
+            </legend>
+
+            <div class="mt-9">
+              <h2 class="font-staatliches text-xl text-cinza-azulado mb-2">
+                PRIMEIRA MENTORIA
+              </h2>
+              <div class="flex gap-5">
+                <div class="flex flex-col gap-2 w-[50%]">
+                  <label for="date-1" class="font-poppins text-cinza-azulado"
+                    >Data
+                    <span class="ml-3 text-[#C1BCCC] text-xs"
+                      >(DD/MM/AAAA)</span
+                    ></label
+                  >
+                  <input
+                    type="date"
+                    name="date-1"
+                    id="name-1"
+                    class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+                  />
+                </div>
+
+                <div class="flex gap-3">
+                  <div class="flex flex-col gap-2">
+                    <label
+                      for="date-1-datetime-1"
+                      class="font-poppins text-cinza-azulado"
+                      >Das</label
+                    >
+                    <input
+                      type="time"
+                      name="date-1-datetime-1"
+                      id="date-1-datetime-1"
+                      class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label
+                      for="date-1-datetime-2"
+                      class="font-poppins text-cinza-azulado"
+                      >Até</label
+                    >
+                    <input
+                      type="time"
+                      name="date-1-datetime-2"
+                      id="date-1-datetime-2"
+                      class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h2 class="font-staatliches text-xl text-cinza-azulado mb-2">
+                SEGUNDA MENTORIA
+              </h2>
+              <div class="flex gap-5">
+                <div class="flex flex-col gap-2 w-[50%]">
+                  <label for="date-2" class="font-poppins text-cinza-azulado"
+                    >Data
+                    <span class="ml-3 text-[#C1BCCC] text-xs"
+                      >(DD/MM/AAAA)</span
+                    ></label
+                  >
+                  <input
+                    type="date"
+                    name="date-2"
+                    id="date-2"
+                    class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+                  />
+                </div>
+
+                <div class="flex gap-3">
+                  <div class="flex flex-col gap-2">
+                    <label
+                      for="date-2-datetime-1"
+                      class="font-poppins text-cinza-azulado"
+                      >Das</label
+                    >
+                    <input
+                      type="time"
+                      name="date-2-datetime-1"
+                      id="date-2-datetime-1"
+                      class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label
+                      for="date-2-datetime-2"
+                      class="font-poppins text-cinza-azulado"
+                      >Até</label
+                    >
+                    <input
+                      type="time"
+                      name="date-2-datetime-2"
+                      id="date-2-datetime-2"
+                      class="bg-[#FAFAFC] rounded border border-[#e6e6f0] p-3 text-cinza-azulado"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </main>
+
+      <footer
+        class="bg-cinza-azulado mb-16 pb-5 rounded-b-3xl h-[160px] flex items-center justify-center"
+      >
+        <button
+          type="submit"
+          name="button-form"
+          form="form"
+          class="bg-rosa text-white w-[600px] rounded-[20px] font-staatliches uppercase text-xl py-4"
+        >
+          Salvar
+        </button>
+      </footer>
+    </div>
+  </body>
+</html>
